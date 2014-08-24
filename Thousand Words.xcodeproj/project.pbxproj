@@ -22,6 +22,9 @@
 		8825E880191A7D8200DC989A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8825E864191A7D8200DC989A /* CoreData.framework */; };
 		8825E888191A7D8200DC989A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8825E886191A7D8200DC989A /* InfoPlist.strings */; };
 		8825E88A191A7D8200DC989A /* Thousand_WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825E889191A7D8200DC989A /* Thousand_WordsTests.m */; };
+		8825E895191A7DD500DC989A /* TWAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825E894191A7DD500DC989A /* TWAlbumTableViewController.m */; };
+		8825E897191A7E0200DC989A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8825E896191A7E0200DC989A /* Storyboard.storyboard */; };
+		8825E89A191A863B00DC989A /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825E899191A863B00DC989A /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		8825E885191A7D8200DC989A /* Thousand WordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Thousand WordsTests-Info.plist"; sourceTree = "<group>"; };
 		8825E887191A7D8200DC989A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8825E889191A7D8200DC989A /* Thousand_WordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Thousand_WordsTests.m; sourceTree = "<group>"; };
+		8825E893191A7DD500DC989A /* TWAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWAlbumTableViewController.h; path = ../TWAlbumTableViewController.h; sourceTree = "<group>"; };
+		8825E894191A7DD500DC989A /* TWAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWAlbumTableViewController.m; path = ../TWAlbumTableViewController.m; sourceTree = "<group>"; };
+		8825E896191A7E0200DC989A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		8825E898191A863B00DC989A /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		8825E899191A863B00DC989A /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +123,11 @@
 		8825E866191A7D8200DC989A /* Thousand Words */ = {
 			isa = PBXGroup;
 			children = (
-				8825E86F191A7D8200DC989A /* TWAppDelegate.h */,
-				8825E870191A7D8200DC989A /* TWAppDelegate.m */,
+				8825E893191A7DD500DC989A /* TWAlbumTableViewController.h */,
+				8825E894191A7DD500DC989A /* TWAlbumTableViewController.m */,
+				8825E898191A863B00DC989A /* Album.h */,
+				8825E899191A863B00DC989A /* Album.m */,
+				8825E896191A7E0200DC989A /* Storyboard.storyboard */,
 				8825E875191A7D8200DC989A /* Images.xcassets */,
 				8825E872191A7D8200DC989A /* Thousand_Words.xcdatamodeld */,
 				8825E867191A7D8200DC989A /* Supporting Files */,
@@ -127,6 +138,8 @@
 		8825E867191A7D8200DC989A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8825E86F191A7D8200DC989A /* TWAppDelegate.h */,
+				8825E870191A7D8200DC989A /* TWAppDelegate.m */,
 				8825E868191A7D8200DC989A /* Thousand Words-Info.plist */,
 				8825E869191A7D8200DC989A /* InfoPlist.strings */,
 				8825E86C191A7D8200DC989A /* main.m */,
@@ -231,6 +244,7 @@
 			files = (
 				8825E86B191A7D8200DC989A /* InfoPlist.strings in Resources */,
 				8825E876191A7D8200DC989A /* Images.xcassets in Resources */,
+				8825E897191A7E0200DC989A /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +265,8 @@
 			files = (
 				8825E86D191A7D8200DC989A /* main.m in Sources */,
 				8825E871191A7D8200DC989A /* TWAppDelegate.m in Sources */,
+				8825E895191A7DD500DC989A /* TWAlbumTableViewController.m in Sources */,
+				8825E89A191A863B00DC989A /* Album.m in Sources */,
 				8825E874191A7D8200DC989A /* Thousand_Words.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
