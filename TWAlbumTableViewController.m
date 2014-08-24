@@ -8,7 +8,7 @@
 
 #import "TWAlbumTableViewController.h"
 
-@interface TWAlbumTableViewController ()
+@interface TWAlbumTableViewController () 
 
 @end
 
@@ -18,6 +18,13 @@
 {
     if (!_albums) _albums = [[NSMutableArray alloc] init];
     return _albums;
+}
+
+- (IBAction)addAlbumBarButtonItemPressed:(UIBarButtonItem *)sender
+{
+    UIAlertView *newAlbumAlertView = [[UIAlertView alloc] initWithTitle:@"Enter new album name" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Add", nil];
+    [newAlbumAlertView setAlertViewStyle:UIAlertViewStylePlainTextInput];
+    [newAlbumAlertView show];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
