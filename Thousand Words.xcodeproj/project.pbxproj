@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8816104E19B526DD00FC55A8 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8816104D19B526DD00FC55A8 /* Photo.m */; };
+		8816105119B526DE00FC55A8 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 8816105019B526DE00FC55A8 /* Album.m */; };
+		8816105519B5301C00FC55A8 /* TWPictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8816105419B5301C00FC55A8 /* TWPictureDataTransformer.m */; };
 		881D6B5B19AD3A0F000BEECC /* TWCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D6B5A19AD3A0F000BEECC /* TWCoreDataHelper.m */; };
 		881D6B5E19AD3DEF000BEECC /* TWPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D6B5D19AD3DEF000BEECC /* TWPhotosCollectionViewController.m */; };
+		881D6B6119B1D06E000BEECC /* TWPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D6B6019B1D06E000BEECC /* TWPhotoCollectionViewCell.m */; };
+		881D6B6319B1D634000BEECC /* ibiza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 881D6B6219B1D634000BEECC /* ibiza.jpg */; };
 		8825E85F191A7D8200DC989A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8825E85E191A7D8200DC989A /* Foundation.framework */; };
 		8825E861191A7D8200DC989A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8825E860191A7D8200DC989A /* CoreGraphics.framework */; };
 		8825E863191A7D8200DC989A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8825E862191A7D8200DC989A /* UIKit.framework */; };
@@ -26,7 +31,6 @@
 		8825E88A191A7D8200DC989A /* Thousand_WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825E889191A7D8200DC989A /* Thousand_WordsTests.m */; };
 		8825E895191A7DD500DC989A /* TWAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825E894191A7DD500DC989A /* TWAlbumTableViewController.m */; };
 		8825E897191A7E0200DC989A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8825E896191A7E0200DC989A /* Storyboard.storyboard */; };
-		8825E89A191A863B00DC989A /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825E899191A863B00DC989A /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8816104C19B526DD00FC55A8 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		8816104D19B526DD00FC55A8 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		8816104F19B526DE00FC55A8 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		8816105019B526DE00FC55A8 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		8816105319B5301B00FC55A8 /* TWPictureDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPictureDataTransformer.h; sourceTree = "<group>"; };
+		8816105419B5301C00FC55A8 /* TWPictureDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPictureDataTransformer.m; sourceTree = "<group>"; };
 		881D6B5919AD3A0F000BEECC /* TWCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCoreDataHelper.h; sourceTree = "<group>"; };
 		881D6B5A19AD3A0F000BEECC /* TWCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCoreDataHelper.m; sourceTree = "<group>"; };
 		881D6B5C19AD3DEF000BEECC /* TWPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotosCollectionViewController.h; sourceTree = "<group>"; };
 		881D6B5D19AD3DEF000BEECC /* TWPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		881D6B5F19B1D06E000BEECC /* TWPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		881D6B6019B1D06E000BEECC /* TWPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		881D6B6219B1D634000BEECC /* ibiza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ibiza.jpg; sourceTree = "<group>"; };
 		8825E85B191A7D8200DC989A /* Thousand Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thousand Words.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8825E85E191A7D8200DC989A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8825E860191A7D8200DC989A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +78,6 @@
 		8825E893191A7DD500DC989A /* TWAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWAlbumTableViewController.h; path = ../TWAlbumTableViewController.h; sourceTree = "<group>"; };
 		8825E894191A7DD500DC989A /* TWAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWAlbumTableViewController.m; path = ../TWAlbumTableViewController.m; sourceTree = "<group>"; };
 		8825E896191A7E0200DC989A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		8825E898191A863B00DC989A /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
-		8825E899191A863B00DC989A /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +106,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8816105219B526FE00FC55A8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8825E872191A7D8200DC989A /* Thousand_Words.xcdatamodeld */,
+				8816104C19B526DD00FC55A8 /* Photo.h */,
+				8816104D19B526DD00FC55A8 /* Photo.m */,
+				8816104F19B526DE00FC55A8 /* Album.h */,
+				8816105019B526DE00FC55A8 /* Album.m */,
+				8816105319B5301B00FC55A8 /* TWPictureDataTransformer.h */,
+				8816105419B5301C00FC55A8 /* TWPictureDataTransformer.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		8825E852191A7D8100DC989A = {
 			isa = PBXGroup;
 			children = (
@@ -132,14 +157,14 @@
 				8825E896191A7E0200DC989A /* Storyboard.storyboard */,
 				8825E893191A7DD500DC989A /* TWAlbumTableViewController.h */,
 				8825E894191A7DD500DC989A /* TWAlbumTableViewController.m */,
+				881D6B5F19B1D06E000BEECC /* TWPhotoCollectionViewCell.h */,
+				881D6B6019B1D06E000BEECC /* TWPhotoCollectionViewCell.m */,
 				881D6B5C19AD3DEF000BEECC /* TWPhotosCollectionViewController.h */,
 				881D6B5D19AD3DEF000BEECC /* TWPhotosCollectionViewController.m */,
 				881D6B5919AD3A0F000BEECC /* TWCoreDataHelper.h */,
 				881D6B5A19AD3A0F000BEECC /* TWCoreDataHelper.m */,
-				8825E898191A863B00DC989A /* Album.h */,
-				8825E899191A863B00DC989A /* Album.m */,
 				8825E875191A7D8200DC989A /* Images.xcassets */,
-				8825E872191A7D8200DC989A /* Thousand_Words.xcdatamodeld */,
+				8816105219B526FE00FC55A8 /* CoreData */,
 				8825E867191A7D8200DC989A /* Supporting Files */,
 			);
 			path = "Thousand Words";
@@ -148,6 +173,7 @@
 		8825E867191A7D8200DC989A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				881D6B6219B1D634000BEECC /* ibiza.jpg */,
 				8825E86F191A7D8200DC989A /* TWAppDelegate.h */,
 				8825E870191A7D8200DC989A /* TWAppDelegate.m */,
 				8825E868191A7D8200DC989A /* Thousand Words-Info.plist */,
@@ -255,6 +281,7 @@
 				8825E86B191A7D8200DC989A /* InfoPlist.strings in Resources */,
 				8825E876191A7D8200DC989A /* Images.xcassets in Resources */,
 				8825E897191A7E0200DC989A /* Storyboard.storyboard in Resources */,
+				881D6B6319B1D634000BEECC /* ibiza.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8825E86D191A7D8200DC989A /* main.m in Sources */,
+				8816105519B5301C00FC55A8 /* TWPictureDataTransformer.m in Sources */,
 				881D6B5E19AD3DEF000BEECC /* TWPhotosCollectionViewController.m in Sources */,
+				881D6B6119B1D06E000BEECC /* TWPhotoCollectionViewCell.m in Sources */,
+				8816104E19B526DD00FC55A8 /* Photo.m in Sources */,
 				8825E871191A7D8200DC989A /* TWAppDelegate.m in Sources */,
 				8825E895191A7DD500DC989A /* TWAlbumTableViewController.m in Sources */,
-				8825E89A191A863B00DC989A /* Album.m in Sources */,
+				8816105119B526DE00FC55A8 /* Album.m in Sources */,
 				8825E874191A7D8200DC989A /* Thousand_Words.xcdatamodeld in Sources */,
 				881D6B5B19AD3A0F000BEECC /* TWCoreDataHelper.m in Sources */,
 			);

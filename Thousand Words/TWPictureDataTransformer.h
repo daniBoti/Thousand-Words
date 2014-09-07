@@ -1,19 +1,13 @@
 //
-//  Album.m
+//  TWPictureDataTransformer.h
 //  Thousand Words
 //
 //  Created by Dani on 02/09/14.
 //  Copyright (c) 2014 Dani Boti. All rights reserved.
 //
 
-#import "Album.h"
-#import "Photo.h"
+#import <Foundation/Foundation.h>
 
-
-@implementation Album
-
-@dynamic date;
-@dynamic name;
-@dynamic photos;
+@interface TWPictureDataTransformer : NSValueTransformer
 
 @end
