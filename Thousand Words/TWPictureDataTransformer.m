@@ -27,7 +27,7 @@
 
 -(id)reverseTransformedValue:(id)value
 {
-    UIImage *image = [UIImage imageNamed:value];
+    UIImage *image = [UIImage imageWithData:value];
     return image;
 }
 

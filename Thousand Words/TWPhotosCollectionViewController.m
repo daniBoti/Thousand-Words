@@ -11,6 +11,7 @@
 #import "Photo.h"
 #import "TWPictureDataTransformer.h"
 #import "TWCoreDataHelper.h"
+#import "TWPhotoDetailViewController.h"
 
 @interface TWPhotosCollectionViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -41,12 +42,31 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSSet *unorderedPhotos = self.album.photos;
+    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES];
+    NSArray *sortedPhotos = [unorderedPhotos sortedArrayUsingDescriptors:@[dateDescriptor]];
+    self.photos = [sortedPhotos mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Detail Segue"]) {
+        if ([segue.destinationViewController isKindOfClass:[TWPhotoDetailViewController class]]) {
+            TWPhotoDetailViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
+            
+            Photo *selectedPhoto = self.photos[indexPath.row];
+            targetViewController.photo = selectedPhoto;
+        }
+    }
+    
 }
 
 
