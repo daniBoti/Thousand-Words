@@ -87,7 +87,21 @@
     return allFilters;
 }
 
-- (UIImage *)filteredImageFrom
+- (UIImage *)filteredImageFromImage: (UIImage *)image andFilter:(CIFilter *)filter
+{
+    CIImage *unfilteredImage = [[CIImage alloc] initWithCGImage:image.CGImage];
+    
+    [filter setValue:unfilteredImage forKeyPath:kCIInputImageKey];
+    CIImage *filteredImage = [filter outputImage];
+    
+    CGRect extent = [filteredImage extent];
+    
+    CGImageRef cgImage = [self.context createCGImage:filteredImage fromRect:extent];
+
+    UIImage *finalImage = [UIImage imageWithCGImage:cgImage];
+    
+    return finalImage;
+}
 
 #pragma mark - UICollectionView DataSource
 
@@ -97,7 +111,15 @@
     
     TWPhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
-    cell.imageView.image = self.photo.image;
+    
+    dispatch_queue_t filterQueue = dispatch_queue_create("filter queue", NULL);
+    
+    dispatch_async(filterQueue, ^{
+        UIImage *filterImage = [self filteredImageFromImage:self.photo.image andFilter:self.filters[indexPath.row]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            cell.imageView.image = filterImage;
+        });
+    });
     
     return  cell;
 }
@@ -107,15 +129,25 @@
     return [self.filters count];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UICCollectionView Delegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    TWPhotoCollectionViewCell *selectedCell = (TWPhotoCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    self.photo.image = selectedCell.imageView.image;
+    
+    if (self.photo.image) {
+        NSError *error = nil;
+        
+        if (![[self.photo managedObjectContext] save:&error]) {
+            //Handle Error
+            NSLog(@"%@", error);
+        }
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    
 }
-*/
 
 @end
